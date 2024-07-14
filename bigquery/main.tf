@@ -10,6 +10,7 @@ resource "google_bigquery_table" "default" {
   table_id  = var.bigquery_table_id
   dataset_id = google_bigquery_dataset.default.dataset_id
   project   = var.project_id
+  deletion_protection = false
 
   schema = <<EOF
 [
