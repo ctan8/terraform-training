@@ -1,0 +1,1 @@
+gcloud storage buckets create gs://calvyn-terraform-state --location=EU
