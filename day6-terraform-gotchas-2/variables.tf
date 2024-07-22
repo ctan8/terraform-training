@@ -26,19 +26,29 @@ variable "image_type" {
   description = "Image type of the VM instance"
 }
 
-variable "database_version" {
-  description = "SQL database version"
+variable "vm_username" {
+  description = "The username of the VM"
+  sensitive = true
 }
 
-variable "sql_tier" {
-  description = "SQL tier"
+variable "vm_password" {
+  description = "The password of the VM"
+  sensitive = true
 }
 
-variable "sql_username" {
-  description = "SQL username"
-}
+# variable "database_version" {
+#   description = "SQL database version"
+# }
 
-variable "sql_password" {
-  description = "SQL password"
-  sensitive   = true
-}
+# variable "sql_tier" {
+#   description = "SQL tier"
+# }
+
+# variable "sql_username" {
+#   description = "SQL username"
+# }
+
+# variable "sql_password" {
+#   description = "SQL password"
+#   sensitive   = true
+# }

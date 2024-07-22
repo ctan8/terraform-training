@@ -21,3 +21,13 @@ variable "vpc_name" {
 variable "subnet_name" {
   description = "Name of the Subnet"
 }
+
+variable "vm_username" {
+  description = "The username of the VM"
+  sensitive = true
+}
+
+variable "vm_password" {
+  description = "The password of the VM"
+  sensitive = true
+}

@@ -14,4 +14,11 @@ resource "google_compute_instance" "default" {
     network    = var.vpc_name
     subnetwork = var.subnet_name
   }
+
+  metadata_startup_script = <<-EOT
+    #!/bin/bash
+    # Create a new user with a password
+    useradd -m -s /bin/bash ${var.vm_username}
+    echo "${var.vm_username}:${var.vm_password}" | chpasswd
+  EOT
 }

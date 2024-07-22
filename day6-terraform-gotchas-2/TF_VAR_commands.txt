@@ -1,2 +1,2 @@
-export TF_VAR_sql_user=" "
-export TF_VAR_sql_password=" " 
+export TF_VAR_vm_username=" "
+export TF_VAR_vm_password=" " 
