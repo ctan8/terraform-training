@@ -1,0 +1,3 @@
+gcloud compute networks create calvyn-vpc --subnet-mode=auto
+
+terraform import google_compute_network.calvyn_vpc_network calvyn-vpc
