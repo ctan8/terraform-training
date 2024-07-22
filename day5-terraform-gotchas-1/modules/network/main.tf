@@ -4,7 +4,7 @@ resource "google_compute_network" "vpc_network" {
   auto_create_subnetworks = false
 }
 
-# Create subnet cloud SQL
+# Create subnet compute engine
 resource "google_compute_subnetwork" "subnetwork" {
   name          = "${var.name}-subnet"
   ip_cidr_range = var.subnet_ip

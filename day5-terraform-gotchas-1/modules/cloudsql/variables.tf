@@ -16,15 +16,8 @@ variable "sql_tier" {
 
 variable "sql_username" {
   description = "SQL username"
-  sensitive   = true
 }
 
 variable "sql_password" {
   description = "SQL password"
-  sensitive   = true
-}
-
-variable "sql_vpc" {
-  description = "The VPC where SQL will be deployed"
-
 }

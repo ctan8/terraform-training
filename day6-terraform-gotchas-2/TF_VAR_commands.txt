@@ -1,0 +1,2 @@
+export TF_VAR_sql_user=" "
+export TF_VAR_sql_password=" " 

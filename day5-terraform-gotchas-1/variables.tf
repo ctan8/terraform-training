@@ -25,20 +25,3 @@ variable "machine_type" {
 variable "image_type" {
   description = "Image type of the VM instance"
 }
-
-variable "database_version" {
-  description = "SQL database version"
-}
-
-variable "sql_tier" {
-  description = "SQL tier"
-}
-
-variable "sql_username" {
-  description = "SQL username"
-}
-
-variable "sql_password" {
-  description = "SQL password"
-  sensitive   = true
-}
