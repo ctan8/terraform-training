@@ -1,7 +1,0 @@
-project_id   = "dna-tfm-trn-2475"
-region       = "europe-west2"
-zone         = "europe-west2-a"
-name         = "calvyn-terraform"
-machine_type = "e2-small"
-subnet_ip    = "10.0.0.0/24"
-image_type   = "debian-cloud/debian-12"

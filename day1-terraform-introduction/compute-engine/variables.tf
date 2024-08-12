@@ -1,6 +1,6 @@
 variable "project_id" {
   description = "The GCP project ID"
-  default     = "gcp-sandbox-334609"
+  default     = ""
 }
 
 variable "region" {
